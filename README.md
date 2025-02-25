@@ -8,7 +8,7 @@ We are comparing MySQL and SQLite in the context of sustainability, this compari
 
 - Install Python packages:
 	```
-	# Create virtual environnemtn (optional)
+	# Create virtual environment (optional)
 	# python -m venv .venv && source .venv/bin/activate
 	pip install -r requirements.txt
 	```
@@ -47,5 +47,11 @@ We are comparing MySQL and SQLite in the context of sustainability, this compari
 	mysql -u user_CS4575 -p'password_CS4575' -e "USE \`olist_e-commerce\`; SOURCE ./convert_sqlite_to_sql/olist_mysql_100_entries.sql;"
 	```
 ## Run experiments
-- `python script_sqlite.py`, measurements are saved in `results_sqlite.csv`
-- `python script_mysql.py`, measurements are saved in `results_mysql.csv`
+- ```
+	python script_sqlite.py
+	```
+	measurements are saved in `results_sqlite.csv`
+- ```
+	python script_mysql.py
+	```
+	measurements are saved in `results_mysql.csv`
