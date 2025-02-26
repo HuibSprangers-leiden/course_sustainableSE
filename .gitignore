@@ -1,6 +1,5 @@
 .idea
 .venv
-*.csv
 /bin
 /__pycache__
 db/olist.db
