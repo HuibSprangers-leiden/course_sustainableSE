@@ -1,6 +1,6 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-.DS_Store
 .idea
+.venv
+*.csv
+/bin
+/__pycache__
+db/olist.db

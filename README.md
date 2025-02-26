@@ -1,21 +1,36 @@
-# course_sustainableSE
-Website of the course Sustainable Software Engineering (CS4415) at TU Delft.
+# Sustainable Software Engineering (CS4415) - Group 12
 
-## Build & Run
+We are comparing MySQL and SQLite in the context of sustainability, this comparison will focus on energy consumption, using **[EnergiBridge](https://github.com/tdurieux/EnergiBridge)** to measure and analyze the energy usage of both databases in a local testing environment.
 
-The easiest way to get the website running locally is by building and running
-the [Docker](https://docs.docker.com/get-started/) container specified in the
-Dockerfile. In order to do so, you must have Docker installed on your
-system. Official instructions can be found
-[here](https://docs.docker.com/get-docker/), although most Linux distributions
-provide a Docker package of some kind; for Arch-based distros, `pacman -S
-docker docker-buildx` should do the trick.
+## Setup
 
-Once you have Docker installed, run the following from the project folder:
+`(This project has been developed and tested on Windows 11 and requires Python 3)`
 
-```
-docker build . -t sse-site
-docker run -p 4000:4000 -v $(pwd):/myapp -it sse-site
-```
+- Clone this repo: `git clone https://github.com/HuibSprangers-leiden/course_sustainableSE && cd course_sustainableSE`
 
-The website should then be available at <http://localhost:4000/course_sustainableSE/>.
+- Install Python packages:
+
+  ```
+  # Create virtual environment (optional)
+  # python -m venv .venv && source .venv/bin/activate
+  pip install -r requirements.txt
+  ```
+
+- Run setup
+
+  ```
+  python setup.py
+  ```
+
+- Install EnergiBridge
+
+- Install and setup MySQL
+
+- Install and setup SQLite
+
+## Run experiments
+
+- ```
+  python -m controller
+  ```
+  measurements are saved in `output.csv`
