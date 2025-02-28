@@ -1,9 +1,11 @@
+# This file sets up the SQLite database and imports the data from the CSV files
+
+
 import sqlite3
 import os
 import csv
 
 from constants import DATA_FOLDER, DB_FILE, TABLES
-
 
 
 def create_db():

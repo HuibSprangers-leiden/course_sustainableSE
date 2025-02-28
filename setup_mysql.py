@@ -1,3 +1,5 @@
+# This file sets up the MySQL database and imports the data from the CSV files
+
 import mysql.connector
 import os
 

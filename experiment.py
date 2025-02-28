@@ -1,4 +1,4 @@
-# gets run by controller.py for measurements
+# This file gets run by controller.py for measurements
 
 import sqlite3
 import sys

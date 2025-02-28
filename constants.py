@@ -1,3 +1,5 @@
+# This file contains the constants used in the experiments
+
 MYSQL_USER = "mysql"
 MYSQL_PASSWORD = "mysql"
 MYSQL_HOST = "localhost"

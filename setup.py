@@ -1,3 +1,5 @@
+# This file sets up the databases and imports data. It is important to run this file before running the experiments
+
 from setup_mysql import (
     create_db as create_mysql_db,
     import_data as import_mysql_data,
@@ -30,4 +32,6 @@ if __name__ == "__main__":
     sqlite_counts = setup_sqlite()
 
     for table in mysql_counts:
-        print(f"{table}: MySQL - {mysql_counts[table]}, SQLite - {sqlite_counts[table]}")
+        print(
+            f"{table}: MySQL - {mysql_counts[table]}, SQLite - {sqlite_counts[table]}"
+        )

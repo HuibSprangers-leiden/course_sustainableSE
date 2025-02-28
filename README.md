@@ -4,7 +4,13 @@ We are comparing MySQL and SQLite in the context of sustainability, this compari
 
 ## Setup
 
-`(This project has been developed and tested on Windows 11 and requires Python 3)`
+This project has been developed and tested on Windows 11 and requires Python 3.
+
+- Install EnergiBridge
+
+- Install and setup MySQL
+
+- Install and setup SQLite
 
 - Clone this repo: `git clone https://github.com/HuibSprangers-leiden/course_sustainableSE && cd course_sustainableSE`
 
@@ -19,14 +25,8 @@ We are comparing MySQL and SQLite in the context of sustainability, this compari
 - Run setup
 
   ```
-  python setup.py
+  python -m setup
   ```
-
-- Install EnergiBridge
-
-- Install and setup MySQL
-
-- Install and setup SQLite
 
 ## Run experiments
 

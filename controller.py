@@ -1,3 +1,5 @@
+# This file contains runs the experiments and collects the results in a CSV file
+
 import subprocess
 import random
 import time
@@ -6,10 +8,17 @@ from constants import NUM_EXPERIMENTS, REST_TIME
 
 
 def pretty_print(energy, duration):
+    """
+    Pretty prints the energy consumption and duration of an experiment
+    """
     print(f"Energy consumption (J): {energy}; Execution time (s): {duration}")
 
 
 def _process_stdout(output):
+    """
+    Extracts energy consumption and duration from the output of the energibridge tool
+    """
+
     lines = str(output).split("\n")
     for line in lines:
         if "Energy consumption in joules: " in line:
@@ -22,6 +31,10 @@ def _process_stdout(output):
 
 
 def run(cmd):
+    """
+    Runs a command and returns the output
+    """
+
     return subprocess.check_output(
         f"C:/Users/simon/Documents/EnergiBridge/energibridge.exe --summary -o results.csv {cmd}",
         shell=True,
@@ -52,4 +65,4 @@ for db in order:
     with open("output.csv", "a") as file:
         file.write(f"{db},{energy},{duration}\n")
     # pretty_print(energy, duration)
-    time.sleep(REST_TIME)  # 1 min rest
+    time.sleep(REST_TIME)  # rest
